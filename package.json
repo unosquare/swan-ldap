@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Support packages for SWAN Unit Testing",
   "dependencies": {
-    "ldapjs": "^1.0.2",
+    "ldapjs": "^1.0.2"
   },
   "devDependencies": {},
   "repository": {
