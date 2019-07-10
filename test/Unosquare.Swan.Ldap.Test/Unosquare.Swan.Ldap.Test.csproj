@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Unit Testing project</Description>
+    <Copyright>Copyright (c) 2016-2019 - Unosquare</Copyright>
+    <AssemblyTitle>Unosquare SWAN Test</AssemblyTitle>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>Unosquare.Swan.Test</AssemblyName>
+    <CodeAnalysisRuleSet>..\..\StyleCop.Analyzers.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Unosquare.Swan.Ldap\Unosquare.Swan.Ldap.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.msbuild" Version="2.6.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.1.1" />
+    <packagereference Include="NUnit3TestAdapter" Version="3.13.0"></packagereference>
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

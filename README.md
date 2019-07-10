@@ -1,5 +1,5 @@
 
-# <img src="https://github.com/unosquare/swan/raw/master/swan-logo-32.png"></img> SWAN: Stuff We All Need - LDAP Client
+# <img src="https://github.com/unosquare/swan-ldap/raw/master/swan-logo-32.png"></img> SWAN: Stuff We All Need - LDAP Client
 
 **SWAN LDAP Client** was previously included as part of the main SWAN project, but since there is not too much products using an LDAP Client we removed as standalone library.
 
