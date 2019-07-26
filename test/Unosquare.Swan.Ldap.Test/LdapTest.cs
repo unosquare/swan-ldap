@@ -1,11 +1,9 @@
-﻿namespace Unosquare.Swan.Test
+﻿namespace Unosquare.Swan.Ldap.Test
 {
-    using NUnit.Framework;
     using System;
     using System.Net.Sockets;
     using System.Threading.Tasks;
-    using Exceptions;
-    using Networking.Ldap;
+    using NUnit.Framework;
 
     public abstract class LdapTest
     {
