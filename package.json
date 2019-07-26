@@ -1,5 +1,5 @@
 {
-  "name": "swan-lda-unittest",
+  "name": "swan-ldap-unittest",
   "version": "1.0.0",
   "description": "Support packages for SWAN Unit Testing",
   "dependencies": {
