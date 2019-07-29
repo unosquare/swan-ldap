@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/nc6u1j5rhv5qinev?svg=true)](https://ci.appveyor.com/project/geoperez/swan-ldap)
+[![Build Status](https://travis-ci.org/unosquare/swan-ldap.svg?branch=master)](https://travis-ci.org/unosquare/swan-ldap)
 
 # <img src="https://github.com/unosquare/swan-ldap/raw/master/swan-logo-32.png"></img> SWAN: Stuff We All Need - LDAP Client
 
