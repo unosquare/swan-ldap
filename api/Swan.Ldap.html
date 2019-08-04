@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace Unosquare.Swan.Ldap
+    <title>Namespace Swan.Ldap
    | Unosquare SWAN LDAP Client </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace Unosquare.Swan.Ldap
+    <meta name="title" content="Namespace Swan.Ldap
    | Unosquare SWAN LDAP Client ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -76,16 +76,16 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Unosquare.Swan.Ldap">
+            <article class="content wrap" id="_content" data-uid="Swan.Ldap">
   
-  <h1 id="Unosquare_Swan_Ldap" data-uid="Unosquare.Swan.Ldap" class="text-break">Namespace Unosquare.Swan.Ldap
+  <h1 id="Swan_Ldap" data-uid="Swan.Ldap" class="text-break">Namespace Swan.Ldap
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Unosquare.Swan.Ldap.LdapAttribute.html">LdapAttribute</a></h4>
+      <h4><a class="xref" href="Swan.Ldap.LdapAttribute.html">LdapAttribute</a></h4>
       <section><p>The name and values of one attribute of a directory entry.
 LdapAttribute objects are used when searching for, adding,
 modifying, and deleting attributes from the directory.
@@ -93,17 +93,17 @@ LdapAttributes are often used in conjunction with an
 LdapAttributeSet when retrieving or adding multiple
 attributes to an entry.</p>
 </section>
-      <h4><a class="xref" href="Unosquare.Swan.Ldap.LdapAttributeSet.html">LdapAttributeSet</a></h4>
+      <h4><a class="xref" href="Swan.Ldap.LdapAttributeSet.html">LdapAttributeSet</a></h4>
       <section><p>A set of LdapAttribute objects.
 An LdapAttributeSet is a collection of LdapAttribute
 classes as returned from an LdapEntry on a search or read
 operation. LdapAttributeSet may be also used to construct an entry
 to be added to a directory.  </p>
 </section>
-      <h4><a class="xref" href="Unosquare.Swan.Ldap.LdapBindRequest.html">LdapBindRequest</a></h4>
+      <h4><a class="xref" href="Swan.Ldap.LdapBindRequest.html">LdapBindRequest</a></h4>
       <section><p>Represents a simple bind request.</p>
 </section>
-      <h4><a class="xref" href="Unosquare.Swan.Ldap.LdapConnection.html">LdapConnection</a></h4>
+      <h4><a class="xref" href="Swan.Ldap.LdapConnection.html">LdapConnection</a></h4>
       <section><p>The central class that encapsulates the connection
 to a directory server through the Ldap protocol.
 LdapConnection objects are used to perform common Ldap
@@ -116,14 +116,14 @@ construction and can only be connected to one server at one
 port.</p>
 <p>Based on <a href="https://github.com/dsbenghe/Novell.Directory.Ldap.NETStandard">https://github.com/dsbenghe/Novell.Directory.Ldap.NETStandard</a>.</p>
 </section>
-      <h4><a class="xref" href="Unosquare.Swan.Ldap.LdapControl.html">LdapControl</a></h4>
+      <h4><a class="xref" href="Swan.Ldap.LdapControl.html">LdapControl</a></h4>
       <section><p>Encapsulates optional additional parameters or constraints to be applied to
 an Ldap operation.
 When included with LdapConstraints or LdapSearchConstraints
 on an LdapConnection or with a specific operation request, it is
 sent to the server along with operation requests.</p>
 </section>
-      <h4><a class="xref" href="Unosquare.Swan.Ldap.LdapEntry.html">LdapEntry</a></h4>
+      <h4><a class="xref" href="Swan.Ldap.LdapEntry.html">LdapEntry</a></h4>
       <section><p>Represents a single entry in a directory, consisting of
 a distinguished name (DN) and zero or more attributes.
 An instance of
@@ -131,7 +131,7 @@ LdapEntry is created in order to add an entry to a directory, and
 instances of LdapEntry are returned on a search by enumerating an
 LdapSearchResults.</p>
 </section>
-      <h4><a class="xref" href="Unosquare.Swan.Ldap.LdapException.html">LdapException</a></h4>
+      <h4><a class="xref" href="Swan.Ldap.LdapException.html">LdapException</a></h4>
       <section><p>Thrown to indicate that an Ldap exception has occurred. This is a general
 exception which includes a message and an Ldap result code.
 An LdapException can result from physical problems (such as
@@ -139,11 +139,11 @@ network errors) as well as problems with Ldap operations detected
 by the server. For example, if an Ldap add operation fails because of a
 duplicate entry, the server returns a result code.</p>
 </section>
-      <h4><a class="xref" href="Unosquare.Swan.Ldap.LdapMessage.html">LdapMessage</a></h4>
+      <h4><a class="xref" href="Swan.Ldap.LdapMessage.html">LdapMessage</a></h4>
       <section><p>The base class for Ldap request and response messages.
 Subclassed by response messages used in asynchronous operations.</p>
 </section>
-      <h4><a class="xref" href="Unosquare.Swan.Ldap.LdapModification.html">LdapModification</a></h4>
+      <h4><a class="xref" href="Swan.Ldap.LdapModification.html">LdapModification</a></h4>
       <section><p>A single add, delete, or replace operation to an LdapAttribute.
 An LdapModification contains information on the type of modification
 being performed, the name of the attribute to be replaced, and the new
@@ -174,23 +174,23 @@ exists, and is ignored if the attribute does not exist.
 Additional information on Ldap modifications is available in section 4.6
 of. <a href="http://www.ietf.org/rfc/rfc2251.txt">rfc2251.txt</a></p>
 </section>
-      <h4><a class="xref" href="Unosquare.Swan.Ldap.LdapModifyRequest.html">LdapModifyRequest</a></h4>
+      <h4><a class="xref" href="Swan.Ldap.LdapModifyRequest.html">LdapModifyRequest</a></h4>
       <section><p>Represents a LDAP Modification Request Message.</p>
 </section>
-      <h4><a class="xref" href="Unosquare.Swan.Ldap.LdapSearchResults.html">LdapSearchResults</a></h4>
+      <h4><a class="xref" href="Swan.Ldap.LdapSearchResults.html">LdapSearchResults</a></h4>
       <section><p>An LdapSearchResults object is returned from a synchronous search
 operation. It provides access to all results received during the
 operation (entries and exceptions).</p>
 </section>
     <h3 id="enums">Enums
   </h3>
-      <h4><a class="xref" href="Unosquare.Swan.Ldap.LdapModificationOp.html">LdapModificationOp</a></h4>
+      <h4><a class="xref" href="Swan.Ldap.LdapModificationOp.html">LdapModificationOp</a></h4>
       <section><p>Ldap Modification Operators.</p>
 </section>
-      <h4><a class="xref" href="Unosquare.Swan.Ldap.LdapScope.html">LdapScope</a></h4>
+      <h4><a class="xref" href="Swan.Ldap.LdapScope.html">LdapScope</a></h4>
       <section><p>LDAP valid scopes.</p>
 </section>
-      <h4><a class="xref" href="Unosquare.Swan.Ldap.LdapStatusCode.html">LdapStatusCode</a></h4>
+      <h4><a class="xref" href="Swan.Ldap.LdapStatusCode.html">LdapStatusCode</a></h4>
       <section><p>LDAP Connection Status Code.</p>
 </section>
 

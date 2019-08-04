@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class LdapSearchResults
+    <title>Class LdapBindRequest
    | Unosquare SWAN LDAP Client </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class LdapSearchResults
+    <meta name="title" content="Class LdapBindRequest
    | Unosquare SWAN LDAP Client ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -76,25 +76,30 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Unosquare.Swan.Ldap.LdapSearchResults">
+            <article class="content wrap" id="_content" data-uid="Swan.Ldap.LdapBindRequest">
   
   
-  <h1 id="Unosquare_Swan_Ldap_LdapSearchResults" data-uid="Unosquare.Swan.Ldap.LdapSearchResults" class="text-break">Class LdapSearchResults
+  <h1 id="Swan_Ldap_LdapBindRequest" data-uid="Swan.Ldap.LdapBindRequest" class="text-break">Class LdapBindRequest
   </h1>
-  <div class="markdown level0 summary"><p>An LdapSearchResults object is returned from a synchronous search
-operation. It provides access to all results received during the
-operation (entries and exceptions).</p>
+  <div class="markdown level0 summary"><p>Represents a simple bind request.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">LdapSearchResults</span></div>
+    <div class="level1"><a class="xref" href="Swan.Ldap.LdapMessage.html">LdapMessage</a></div>
+    <div class="level2"><span class="xref">LdapBindRequest</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+      <a class="xref" href="Swan.Ldap.LdapMessage.html#Swan_Ldap_LdapMessage_MessageId">LdapMessage.MessageId</a>
+    </div>
+    <div>
+      <a class="xref" href="Swan.Ldap.LdapMessage.html#Swan_Ldap_LdapMessage_Request">LdapMessage.Request</a>
+    </div>
+    <div>
+      <a class="xref" href="Swan.Ldap.LdapMessage.html#Swan_Ldap_LdapMessage_Tag">LdapMessage.Tag</a>
     </div>
     <div>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
@@ -115,23 +120,74 @@ operation (entries and exceptions).</p>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Unosquare.Swan.Ldap.html">Unosquare.Swan.Ldap</a></h6>
-  <h5 id="Unosquare_Swan_Ldap_LdapSearchResults_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Swan.Ldap.html">Swan.Ldap</a></h6>
+  <h5 id="Swan_Ldap_LdapBindRequest_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class LdapSearchResults</code></pre>
+    <pre><code class="lang-csharp hljs">public class LdapBindRequest : LdapMessage</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapSearchResults_Count_" data-uid="Unosquare.Swan.Ldap.LdapSearchResults.Count*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapSearchResults_Count" data-uid="Unosquare.Swan.Ldap.LdapSearchResults.Count">Count</h4>
-  <div class="markdown level1 summary"><p>Returns a count of the items in the search result.</p>
+  <a id="Swan_Ldap_LdapBindRequest__ctor_" data-uid="Swan.Ldap.LdapBindRequest.#ctor*"></a>
+  <h4 id="Swan_Ldap_LdapBindRequest__ctor_System_Int32_System_String_System_SByte___" data-uid="Swan.Ldap.LdapBindRequest.#ctor(System.Int32,System.String,System.SByte[])">LdapBindRequest(Int32, String, SByte[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Swan.Ldap.LdapBindRequest.html">LdapBindRequest</a> class.
+Constructs a simple bind request.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public LdapBindRequest(int version, string dn, sbyte[] password)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The Ldap protocol version, use Ldap_V3.
+Ldap_V2 is not supported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">dn</span></td>
+        <td><p>If non-null and non-empty, specifies that the
+connection and all operations through it should
+be authenticated with dn as the distinguished
+name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.sbyte">SByte</a>[]</td>
+        <td><span class="parametername">password</span></td>
+        <td><p>If non-null and non-empty, specifies that the
+connection and all operations through it should
+be authenticated with dn as the distinguished
+name and passwd as password.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Swan_Ldap_LdapBindRequest_AuthenticationDN_" data-uid="Swan.Ldap.LdapBindRequest.AuthenticationDN*"></a>
+  <h4 id="Swan_Ldap_LdapBindRequest_AuthenticationDN" data-uid="Swan.Ldap.LdapBindRequest.AuthenticationDN">AuthenticationDN</h4>
+  <div class="markdown level1 summary"><p>Retrieves the Authentication DN for a bind request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AuthenticationDN { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,8 +199,8 @@ operation (entries and exceptions).</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><p>The count.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>The authentication dn.</p>
 </td>
       </tr>
     </tbody>
@@ -153,14 +209,14 @@ operation (entries and exceptions).</p>
   </h3>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapSearchResults_HasMore_" data-uid="Unosquare.Swan.Ldap.LdapSearchResults.HasMore*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapSearchResults_HasMore" data-uid="Unosquare.Swan.Ldap.LdapSearchResults.HasMore">HasMore()</h4>
-  <div class="markdown level1 summary"><p>Reports if there are more search results.</p>
+  <a id="Swan_Ldap_LdapBindRequest_ToString_" data-uid="Swan.Ldap.LdapBindRequest.ToString*"></a>
+  <h4 id="Swan_Ldap_LdapBindRequest_ToString" data-uid="Swan.Ldap.LdapBindRequest.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> that represents this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool HasMore()</code></pre>
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -172,58 +228,17 @@ operation (entries and exceptions).</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p>true if there are more search results.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a> that represents this instance.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="Unosquare_Swan_Ldap_LdapSearchResults_Next_" data-uid="Unosquare.Swan.Ldap.LdapSearchResults.Next*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapSearchResults_Next" data-uid="Unosquare.Swan.Ldap.LdapSearchResults.Next">Next()</h4>
-  <div class="markdown level1 summary"><p>Returns the next result as an LdapEntry.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LdapEntry Next()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Unosquare.Swan.Ldap.LdapEntry.html">LdapEntry</a></td>
-        <td><p>The next search result as an LdapEntry.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
-        <td><p>Next - No more results.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Swan.Ldap.LdapMessage.html#Swan_Ldap_LdapMessage_ToString">LdapMessage.ToString()</a></div>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
-      <div><a class="xref" href="Unosquare.Swan.Ldap.LdapConnection.html#Unosquare_Swan_Ldap_LdapConnection_Search_System_String_Unosquare_Swan_Ldap_LdapScope_System_String_System_String___System_Boolean_System_Threading_CancellationToken_">Search(String, LdapScope, String, String[], Boolean, CancellationToken)</a></div>
+      <div><a class="xref" href="Swan.Ldap.LdapMessage.html">LdapMessage</a></div>
   </div>
 
 <h3 id="disqus_thread">Comments</h3>

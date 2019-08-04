@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class LdapControl
+    <title>Class LdapEntry
    | Unosquare SWAN LDAP Client </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class LdapControl
+    <meta name="title" content="Class LdapEntry
    | Unosquare SWAN LDAP Client ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -76,22 +76,23 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Unosquare.Swan.Ldap.LdapControl">
+            <article class="content wrap" id="_content" data-uid="Swan.Ldap.LdapEntry">
   
   
-  <h1 id="Unosquare_Swan_Ldap_LdapControl" data-uid="Unosquare.Swan.Ldap.LdapControl" class="text-break">Class LdapControl
+  <h1 id="Swan_Ldap_LdapEntry" data-uid="Swan.Ldap.LdapEntry" class="text-break">Class LdapEntry
   </h1>
-  <div class="markdown level0 summary"><p>Encapsulates optional additional parameters or constraints to be applied to
-an Ldap operation.
-When included with LdapConstraints or LdapSearchConstraints
-on an LdapConnection or with a specific operation request, it is
-sent to the server along with operation requests.</p>
+  <div class="markdown level0 summary"><p>Represents a single entry in a directory, consisting of
+a distinguished name (DN) and zero or more attributes.
+An instance of
+LdapEntry is created in order to add an entry to a directory, and
+instances of LdapEntry are returned on a search by enumerating an
+LdapSearchResults.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">LdapControl</span></div>
+    <div class="level1"><span class="xref">LdapEntry</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -117,24 +118,25 @@ sent to the server along with operation requests.</p>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Unosquare.Swan.Ldap.html">Unosquare.Swan.Ldap</a></h6>
-  <h5 id="Unosquare_Swan_Ldap_LdapControl_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Swan.Ldap.html">Swan.Ldap</a></h6>
+  <h5 id="Swan_Ldap_LdapEntry_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LdapControl</code></pre>
+    <pre><code class="lang-csharp hljs">public class LdapEntry</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapControl__ctor_" data-uid="Unosquare.Swan.Ldap.LdapControl.#ctor*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapControl__ctor_System_String_System_Boolean_System_SByte___" data-uid="Unosquare.Swan.Ldap.LdapControl.#ctor(System.String,System.Boolean,System.SByte[])">LdapControl(String, Boolean, SByte[])</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Unosquare.Swan.Ldap.LdapControl.html">LdapControl</a> class.
-Constructs a new LdapControl object using the specified values.</p>
+  <a id="Swan_Ldap_LdapEntry__ctor_" data-uid="Swan.Ldap.LdapEntry.#ctor*"></a>
+  <h4 id="Swan_Ldap_LdapEntry__ctor_System_String_Swan_Ldap_LdapAttributeSet_" data-uid="Swan.Ldap.LdapEntry.#ctor(System.String,Swan.Ldap.LdapAttributeSet)">LdapEntry(String, LdapAttributeSet)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Swan.Ldap.LdapEntry.html">LdapEntry</a> class.
+Constructs a new entry with the specified distinguished name and set
+of attributes.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LdapControl(string oid, bool critical, sbyte[] values)</code></pre>
+    <pre><code class="lang-csharp hljs">public LdapEntry(string dn = null, LdapAttributeSet attrs = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -148,38 +150,17 @@ Constructs a new LdapControl object using the specified values.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">oid</span></td>
-        <td><p>The OID of the control, as a dotted string.</p>
+        <td><span class="parametername">dn</span></td>
+        <td><p>The distinguished name of the new entry. The
+value is not validated. An invalid distinguished
+name will cause operations using this entry to fail.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><span class="parametername">critical</span></td>
-        <td><p>True if the Ldap operation should be discarded if
-the control is not supported. False if
-the operation can be processed without the control.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.sbyte">SByte</a>[]</td>
-        <td><span class="parametername">values</span></td>
-        <td><p>The control-specific data.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
-        <td><p>An OID must be specified.</p>
+        <td><a class="xref" href="Swan.Ldap.LdapAttributeSet.html">LdapAttributeSet</a></td>
+        <td><span class="parametername">attrs</span></td>
+        <td><p>The initial set of attributes assigned to the
+entry.</p>
 </td>
       </tr>
     </tbody>
@@ -188,41 +169,14 @@ the operation can be processed without the control.</p>
   </h3>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapControl_Critical_" data-uid="Unosquare.Swan.Ldap.LdapControl.Critical*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapControl_Critical" data-uid="Unosquare.Swan.Ldap.LdapControl.Critical">Critical</h4>
-  <div class="markdown level1 summary"><p>Returns whether the control is critical for the operation.</p>
+  <a id="Swan_Ldap_LdapEntry_DN_" data-uid="Swan.Ldap.LdapEntry.DN*"></a>
+  <h4 id="Swan_Ldap_LdapEntry_DN" data-uid="Swan.Ldap.LdapEntry.DN">DN</h4>
+  <div class="markdown level1 summary"><p>Returns the distinguished name of the entry.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Critical { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><code>true</code> if critical; otherwise, <code>false</code>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Unosquare_Swan_Ldap_LdapControl_Id_" data-uid="Unosquare.Swan.Ldap.LdapControl.Id*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapControl_Id" data-uid="Unosquare.Swan.Ldap.LdapControl.Id">Id</h4>
-  <div class="markdown level1 summary"><p>Returns the identifier of the control.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Id { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string DN { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -235,7 +189,7 @@ the operation can be processed without the control.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>The identifier.</p>
+        <td><p>The dn.</p>
 </td>
       </tr>
     </tbody>
@@ -244,14 +198,62 @@ the operation can be processed without the control.</p>
   </h3>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapControl_GetValue_" data-uid="Unosquare.Swan.Ldap.LdapControl.GetValue*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapControl_GetValue" data-uid="Unosquare.Swan.Ldap.LdapControl.GetValue">GetValue()</h4>
-  <div class="markdown level1 summary"><p>Returns the control-specific data of the object.</p>
+  <a id="Swan_Ldap_LdapEntry_GetAttribute_" data-uid="Swan.Ldap.LdapEntry.GetAttribute*"></a>
+  <h4 id="Swan_Ldap_LdapEntry_GetAttribute_System_String_" data-uid="Swan.Ldap.LdapEntry.GetAttribute(System.String)">GetAttribute(String)</h4>
+  <div class="markdown level1 summary"><p>Returns the attributes matching the specified attrName.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sbyte[] GetValue()</code></pre>
+    <pre><code class="lang-csharp hljs">public LdapAttribute GetAttribute(string attrName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">attrName</span></td>
+        <td><p>The name of the attribute or attributes to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Swan.Ldap.LdapAttribute.html">LdapAttribute</a></td>
+        <td><p>The attribute matching the name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Swan_Ldap_LdapEntry_GetAttributeSet_" data-uid="Swan.Ldap.LdapEntry.GetAttributeSet*"></a>
+  <h4 id="Swan_Ldap_LdapEntry_GetAttributeSet" data-uid="Swan.Ldap.LdapEntry.GetAttributeSet">GetAttributeSet()</h4>
+  <div class="markdown level1 summary"><p>Returns the attribute set of the entry.
+All base and subtype variants of all attributes are
+returned. The LdapAttributeSet returned may be
+empty if there are no attributes in the entry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LdapAttributeSet GetAttributeSet()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -263,26 +265,30 @@ the operation can be processed without the control.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.sbyte">SByte</a>[]</td>
-        <td><p>The control-specific data of the object as a byte array,
-or null if the control has no data.</p>
+        <td><a class="xref" href="Swan.Ldap.LdapAttributeSet.html">LdapAttributeSet</a></td>
+        <td><p>The attribute set of the entry.</p>
 </td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapControl_Register_" data-uid="Unosquare.Swan.Ldap.LdapControl.Register*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapControl_Register_System_String_System_Type_" data-uid="Unosquare.Swan.Ldap.LdapControl.Register(System.String,System.Type)">Register(String, Type)</h4>
-  <div class="markdown level1 summary"><p>Registers a class to be instantiated on receipt of a control with the
-given OID.
-Any previous registration for the OID is overridden. The
-controlClass must be an extension of LdapControl.</p>
+  <a id="Swan_Ldap_LdapEntry_GetAttributeSet_" data-uid="Swan.Ldap.LdapEntry.GetAttributeSet*"></a>
+  <h4 id="Swan_Ldap_LdapEntry_GetAttributeSet_System_String_" data-uid="Swan.Ldap.LdapEntry.GetAttributeSet(System.String)">GetAttributeSet(String)</h4>
+  <div class="markdown level1 summary"><p>Returns an attribute set from the entry, consisting of only those
+attributes matching the specified subtypes.
+The getAttributeSet method can be used to extract only
+a particular language variant subtype of each attribute,
+if it exists. The &quot;subtype&quot; may be, for example, &quot;lang-ja&quot;, &quot;binary&quot;,
+or &quot;lang-ja;phonetic&quot;. If more than one subtype is specified, separated
+with a semicolon, only those attributes with all of the named
+subtypes will be returned. The LdapAttributeSet returned may be
+empty if there are no matching attributes in the entry.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Register(string oid, Type controlClass)</code></pre>
+    <pre><code class="lang-csharp hljs">public LdapAttributeSet GetAttributeSet(string subtype)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -296,18 +302,38 @@ controlClass must be an extension of LdapControl.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">oid</span></td>
-        <td><p>The object identifier of the control.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
-        <td><span class="parametername">controlClass</span></td>
-        <td><p>A class which can instantiate an LdapControl.</p>
+        <td><span class="parametername">subtype</span></td>
+        <td><p>One or more subtype specification(s), separated
+with semicolons. The &quot;lang-ja&quot; and
+&quot;lang-en;phonetic&quot; are valid subtype
+specifications.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Swan.Ldap.LdapAttributeSet.html">LdapAttributeSet</a></td>
+        <td><p>An attribute set from the entry with the attributes that
+match the specified subtypes or an empty set if no attributes
+match.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="Swan.Ldap.LdapAttribute.html">LdapAttribute</a></div>
+      <div><a class="xref" href="Swan.Ldap.LdapAttributeSet.html">LdapAttributeSet</a></div>
+  </div>
 
 <h3 id="disqus_thread">Comments</h3>
 <script>

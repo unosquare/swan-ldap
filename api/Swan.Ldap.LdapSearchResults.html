@@ -5,12 +5,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class LdapEntry
+    <title>Class LdapSearchResults
    | Unosquare SWAN LDAP Client </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class LdapEntry
+    <meta name="title" content="Class LdapSearchResults
    | Unosquare SWAN LDAP Client ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -76,23 +76,20 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Unosquare.Swan.Ldap.LdapEntry">
+            <article class="content wrap" id="_content" data-uid="Swan.Ldap.LdapSearchResults">
   
   
-  <h1 id="Unosquare_Swan_Ldap_LdapEntry" data-uid="Unosquare.Swan.Ldap.LdapEntry" class="text-break">Class LdapEntry
+  <h1 id="Swan_Ldap_LdapSearchResults" data-uid="Swan.Ldap.LdapSearchResults" class="text-break">Class LdapSearchResults
   </h1>
-  <div class="markdown level0 summary"><p>Represents a single entry in a directory, consisting of
-a distinguished name (DN) and zero or more attributes.
-An instance of
-LdapEntry is created in order to add an entry to a directory, and
-instances of LdapEntry are returned on a search by enumerating an
-LdapSearchResults.</p>
+  <div class="markdown level0 summary"><p>An LdapSearchResults object is returned from a synchronous search
+operation. It provides access to all results received during the
+operation (entries and exceptions).</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><span class="xref">LdapEntry</span></div>
+    <div class="level1"><span class="xref">LdapSearchResults</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -118,65 +115,23 @@ LdapSearchResults.</p>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Unosquare.Swan.Ldap.html">Unosquare.Swan.Ldap</a></h6>
-  <h5 id="Unosquare_Swan_Ldap_LdapEntry_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Swan.Ldap.html">Swan.Ldap</a></h6>
+  <h5 id="Swan_Ldap_LdapSearchResults_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class LdapEntry</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class LdapSearchResults</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-  </h3>
-  
-  
-  <a id="Unosquare_Swan_Ldap_LdapEntry__ctor_" data-uid="Unosquare.Swan.Ldap.LdapEntry.#ctor*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapEntry__ctor_System_String_Unosquare_Swan_Ldap_LdapAttributeSet_" data-uid="Unosquare.Swan.Ldap.LdapEntry.#ctor(System.String,Unosquare.Swan.Ldap.LdapAttributeSet)">LdapEntry(String, LdapAttributeSet)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Unosquare.Swan.Ldap.LdapEntry.html">LdapEntry</a> class.
-Constructs a new entry with the specified distinguished name and set
-of attributes.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LdapEntry(string dn = null, LdapAttributeSet attrs = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">dn</span></td>
-        <td><p>The distinguished name of the new entry. The
-value is not validated. An invalid distinguished
-name will cause operations using this entry to fail.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Unosquare.Swan.Ldap.LdapAttributeSet.html">LdapAttributeSet</a></td>
-        <td><span class="parametername">attrs</span></td>
-        <td><p>The initial set of attributes assigned to the
-entry.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapEntry_DN_" data-uid="Unosquare.Swan.Ldap.LdapEntry.DN*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapEntry_DN" data-uid="Unosquare.Swan.Ldap.LdapEntry.DN">DN</h4>
-  <div class="markdown level1 summary"><p>Returns the distinguished name of the entry.</p>
+  <a id="Swan_Ldap_LdapSearchResults_Count_" data-uid="Swan.Ldap.LdapSearchResults.Count*"></a>
+  <h4 id="Swan_Ldap_LdapSearchResults_Count" data-uid="Swan.Ldap.LdapSearchResults.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Returns a count of the items in the search result.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string DN { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -188,8 +143,8 @@ entry.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><p>The dn.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>The count.</p>
 </td>
       </tr>
     </tbody>
@@ -198,62 +153,14 @@ entry.</p>
   </h3>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapEntry_GetAttribute_" data-uid="Unosquare.Swan.Ldap.LdapEntry.GetAttribute*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapEntry_GetAttribute_System_String_" data-uid="Unosquare.Swan.Ldap.LdapEntry.GetAttribute(System.String)">GetAttribute(String)</h4>
-  <div class="markdown level1 summary"><p>Returns the attributes matching the specified attrName.</p>
+  <a id="Swan_Ldap_LdapSearchResults_HasMore_" data-uid="Swan.Ldap.LdapSearchResults.HasMore*"></a>
+  <h4 id="Swan_Ldap_LdapSearchResults_HasMore" data-uid="Swan.Ldap.LdapSearchResults.HasMore">HasMore()</h4>
+  <div class="markdown level1 summary"><p>Reports if there are more search results.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LdapAttribute GetAttribute(string attrName)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">attrName</span></td>
-        <td><p>The name of the attribute or attributes to return.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Unosquare.Swan.Ldap.LdapAttribute.html">LdapAttribute</a></td>
-        <td><p>The attribute matching the name.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Unosquare_Swan_Ldap_LdapEntry_GetAttributeSet_" data-uid="Unosquare.Swan.Ldap.LdapEntry.GetAttributeSet*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapEntry_GetAttributeSet" data-uid="Unosquare.Swan.Ldap.LdapEntry.GetAttributeSet">GetAttributeSet()</h4>
-  <div class="markdown level1 summary"><p>Returns the attribute set of the entry.
-All base and subtype variants of all attributes are
-returned. The LdapAttributeSet returned may be
-empty if there are no attributes in the entry.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LdapAttributeSet GetAttributeSet()</code></pre>
+    <pre><code class="lang-csharp hljs">public bool HasMore()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -265,52 +172,23 @@ empty if there are no attributes in the entry.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Unosquare.Swan.Ldap.LdapAttributeSet.html">LdapAttributeSet</a></td>
-        <td><p>The attribute set of the entry.</p>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if there are more search results.</p>
 </td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapEntry_GetAttributeSet_" data-uid="Unosquare.Swan.Ldap.LdapEntry.GetAttributeSet*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapEntry_GetAttributeSet_System_String_" data-uid="Unosquare.Swan.Ldap.LdapEntry.GetAttributeSet(System.String)">GetAttributeSet(String)</h4>
-  <div class="markdown level1 summary"><p>Returns an attribute set from the entry, consisting of only those
-attributes matching the specified subtypes.
-The getAttributeSet method can be used to extract only
-a particular language variant subtype of each attribute,
-if it exists. The &quot;subtype&quot; may be, for example, &quot;lang-ja&quot;, &quot;binary&quot;,
-or &quot;lang-ja;phonetic&quot;. If more than one subtype is specified, separated
-with a semicolon, only those attributes with all of the named
-subtypes will be returned. The LdapAttributeSet returned may be
-empty if there are no matching attributes in the entry.</p>
+  <a id="Swan_Ldap_LdapSearchResults_Next_" data-uid="Swan.Ldap.LdapSearchResults.Next*"></a>
+  <h4 id="Swan_Ldap_LdapSearchResults_Next" data-uid="Swan.Ldap.LdapSearchResults.Next">Next()</h4>
+  <div class="markdown level1 summary"><p>Returns the next result as an LdapEntry.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public LdapAttributeSet GetAttributeSet(string subtype)</code></pre>
+    <pre><code class="lang-csharp hljs">public LdapEntry Next()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
-        <td><span class="parametername">subtype</span></td>
-        <td><p>One or more subtype specification(s), separated
-with semicolons. The &quot;lang-ja&quot; and
-&quot;lang-en;phonetic&quot; are valid subtype
-specifications.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -321,18 +199,31 @@ specifications.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Unosquare.Swan.Ldap.LdapAttributeSet.html">LdapAttributeSet</a></td>
-        <td><p>An attribute set from the entry with the attributes that
-match the specified subtypes or an empty set if no attributes
-match.</p>
+        <td><a class="xref" href="Swan.Ldap.LdapEntry.html">LdapEntry</a></td>
+        <td><p>The next search result as an LdapEntry.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>Next - No more results.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h3 id="seealso">See Also</h3>
   <div class="seealso">
-      <div><a class="xref" href="Unosquare.Swan.Ldap.LdapAttribute.html">LdapAttribute</a></div>
-      <div><a class="xref" href="Unosquare.Swan.Ldap.LdapAttributeSet.html">LdapAttributeSet</a></div>
+      <div><a class="xref" href="Swan.Ldap.LdapConnection.html#Swan_Ldap_LdapConnection_Search_System_String_Swan_Ldap_LdapScope_System_String_System_String___System_Boolean_System_Threading_CancellationToken_">Search(String, LdapScope, String, String[], Boolean, CancellationToken)</a></div>
   </div>
 
 <h3 id="disqus_thread">Comments</h3>

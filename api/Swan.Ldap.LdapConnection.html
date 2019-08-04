@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class LdapConnection
    | Unosquare SWAN LDAP Client ">
-    <meta name="generator" content="docfx 2.43.3.0">
+    <meta name="generator" content="docfx 2.44.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -76,10 +76,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Unosquare.Swan.Ldap.LdapConnection">
+            <article class="content wrap" id="_content" data-uid="Swan.Ldap.LdapConnection">
   
   
-  <h1 id="Unosquare_Swan_Ldap_LdapConnection" data-uid="Unosquare.Swan.Ldap.LdapConnection" class="text-break">Class LdapConnection
+  <h1 id="Swan_Ldap_LdapConnection" data-uid="Swan.Ldap.LdapConnection" class="text-break">Class LdapConnection
   </h1>
   <div class="markdown level0 summary"><p>The central class that encapsulates the connection
 to a directory server through the Ldap protocol.
@@ -127,17 +127,17 @@ port.</p>
       <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Unosquare.Swan.Ldap.html">Unosquare.Swan.Ldap</a></h6>
-  <h5 id="Unosquare_Swan_Ldap_LdapConnection_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Swan.Ldap.html">Swan.Ldap</a></h6>
+  <h5 id="Swan_Ldap_LdapConnection_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class LdapConnection : IDisposable</code></pre>
   </div>
-  <h5 id="Unosquare_Swan_Ldap_LdapConnection_examples"><strong>Examples</strong></h5>
+  <h5 id="Swan_Ldap_LdapConnection_examples"><strong>Examples</strong></h5>
   <p>The following code describes how to use the LdapConnection class:</p>
 <pre><code>class Example
 {
-    using Unosquare.Swan;
-    using Unosquare.Swan.Networking.Ldap;
+    using Swan;
+    using Swan.Networking.Ldap;
     using System.Threading.Tasks;
 
     static async Task Main()
@@ -202,8 +202,8 @@ port.</p>
   </h3>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapConnection_AuthenticationDn_" data-uid="Unosquare.Swan.Ldap.LdapConnection.AuthenticationDn*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapConnection_AuthenticationDn" data-uid="Unosquare.Swan.Ldap.LdapConnection.AuthenticationDn">AuthenticationDn</h4>
+  <a id="Swan_Ldap_LdapConnection_AuthenticationDn_" data-uid="Swan.Ldap.LdapConnection.AuthenticationDn*"></a>
+  <h4 id="Swan_Ldap_LdapConnection_AuthenticationDn" data-uid="Swan.Ldap.LdapConnection.AuthenticationDn">AuthenticationDn</h4>
   <div class="markdown level1 summary"><p>Returns the distinguished name (DN) used for as the bind name during
 the last successful bind operation.  null is returned
 if no authentication has been performed or if the bind resulted in
@@ -232,8 +232,8 @@ an anonymous connection.</p>
   </table>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapConnection_AuthenticationMethod_" data-uid="Unosquare.Swan.Ldap.LdapConnection.AuthenticationMethod*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapConnection_AuthenticationMethod" data-uid="Unosquare.Swan.Ldap.LdapConnection.AuthenticationMethod">AuthenticationMethod</h4>
+  <a id="Swan_Ldap_LdapConnection_AuthenticationMethod_" data-uid="Swan.Ldap.LdapConnection.AuthenticationMethod*"></a>
+  <h4 id="Swan_Ldap_LdapConnection_AuthenticationMethod" data-uid="Swan.Ldap.LdapConnection.AuthenticationMethod">AuthenticationMethod</h4>
   <div class="markdown level1 summary"><p>Returns the method used to authenticate the connection. The return
 value is one of the following:.
 <ul><li>&quot;none&quot; indicates the connection is not authenticated.</li><li>
@@ -264,8 +264,8 @@ or empty authentication DN was specified.
   </table>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapConnection_Connected_" data-uid="Unosquare.Swan.Ldap.LdapConnection.Connected*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapConnection_Connected" data-uid="Unosquare.Swan.Ldap.LdapConnection.Connected">Connected</h4>
+  <a id="Swan_Ldap_LdapConnection_Connected_" data-uid="Swan.Ldap.LdapConnection.Connected*"></a>
+  <h4 id="Swan_Ldap_LdapConnection_Connected" data-uid="Swan.Ldap.LdapConnection.Connected">Connected</h4>
   <div class="markdown level1 summary"><p>Indicates whether the connection represented by this object is open
 at this time.</p>
 </div>
@@ -292,8 +292,8 @@ at this time.</p>
   </table>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapConnection_ProtocolVersion_" data-uid="Unosquare.Swan.Ldap.LdapConnection.ProtocolVersion*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapConnection_ProtocolVersion" data-uid="Unosquare.Swan.Ldap.LdapConnection.ProtocolVersion">ProtocolVersion</h4>
+  <a id="Swan_Ldap_LdapConnection_ProtocolVersion_" data-uid="Swan.Ldap.LdapConnection.ProtocolVersion*"></a>
+  <h4 id="Swan_Ldap_LdapConnection_ProtocolVersion" data-uid="Swan.Ldap.LdapConnection.ProtocolVersion">ProtocolVersion</h4>
   <div class="markdown level1 summary"><p>Returns the protocol version uses to authenticate.
 0 is returned if no authentication has been performed.</p>
 </div>
@@ -322,8 +322,8 @@ at this time.</p>
   </h3>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapConnection_Bind_" data-uid="Unosquare.Swan.Ldap.LdapConnection.Bind*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapConnection_Bind_System_Int32_System_String_System_String_" data-uid="Unosquare.Swan.Ldap.LdapConnection.Bind(System.Int32,System.String,System.String)">Bind(Int32, String, String)</h4>
+  <a id="Swan_Ldap_LdapConnection_Bind_" data-uid="Swan.Ldap.LdapConnection.Bind*"></a>
+  <h4 id="Swan_Ldap_LdapConnection_Bind_System_Int32_System_String_System_String_" data-uid="Swan.Ldap.LdapConnection.Bind(System.Int32,System.String,System.String)">Bind(Int32, String, String)</h4>
   <div class="markdown level1 summary"><p>Synchronously authenticates to the Ldap server (that the object is
 currently connected to) using the specified name, password, Ldap version,
 and constraints.
@@ -396,8 +396,8 @@ keeps no long lived instances of these objects.</p>
   </table>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapConnection_Bind_" data-uid="Unosquare.Swan.Ldap.LdapConnection.Bind*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapConnection_Bind_System_String_System_String_" data-uid="Unosquare.Swan.Ldap.LdapConnection.Bind(System.String,System.String)">Bind(String, String)</h4>
+  <a id="Swan_Ldap_LdapConnection_Bind_" data-uid="Swan.Ldap.LdapConnection.Bind*"></a>
+  <h4 id="Swan_Ldap_LdapConnection_Bind_System_String_System_String_" data-uid="Swan.Ldap.LdapConnection.Bind(System.String,System.String)">Bind(String, String)</h4>
   <div class="markdown level1 summary"><p>Synchronously authenticates to the Ldap server (that the object is
 currently connected to) using the specified name, password, Ldap version,
 and constraints.
@@ -463,8 +463,8 @@ keeps no long lived instances of these objects.</p>
   </table>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapConnection_Connect_" data-uid="Unosquare.Swan.Ldap.LdapConnection.Connect*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapConnection_Connect_System_String_System_Int32_" data-uid="Unosquare.Swan.Ldap.LdapConnection.Connect(System.String,System.Int32)">Connect(String, Int32)</h4>
+  <a id="Swan_Ldap_LdapConnection_Connect_" data-uid="Swan.Ldap.LdapConnection.Connect*"></a>
+  <h4 id="Swan_Ldap_LdapConnection_Connect_System_String_System_Int32_" data-uid="Swan.Ldap.LdapConnection.Connect(System.String,System.Int32)">Connect(String, Int32)</h4>
   <div class="markdown level1 summary"><p>Connects to the specified host and port.
 If this LdapConnection object represents an open connection, the
 connection is closed first before the new connection is opened.
@@ -520,8 +520,8 @@ The default Ldap port is 389.</p>
   </table>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapConnection_Disconnect_" data-uid="Unosquare.Swan.Ldap.LdapConnection.Disconnect*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapConnection_Disconnect" data-uid="Unosquare.Swan.Ldap.LdapConnection.Disconnect">Disconnect()</h4>
+  <a id="Swan_Ldap_LdapConnection_Disconnect_" data-uid="Swan.Ldap.LdapConnection.Disconnect*"></a>
+  <h4 id="Swan_Ldap_LdapConnection_Disconnect" data-uid="Swan.Ldap.LdapConnection.Disconnect">Disconnect()</h4>
   <div class="markdown level1 summary"><p>Synchronously disconnects from the Ldap server.
 Before the object can perform Ldap operations again, it must
 reconnect to the server by calling connect.
@@ -535,8 +535,8 @@ unbind request to the server, and then closes the socket.</p>
   </div>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapConnection_Dispose_" data-uid="Unosquare.Swan.Ldap.LdapConnection.Dispose*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapConnection_Dispose" data-uid="Unosquare.Swan.Ldap.LdapConnection.Dispose">Dispose()</h4>
+  <a id="Swan_Ldap_LdapConnection_Dispose_" data-uid="Swan.Ldap.LdapConnection.Dispose*"></a>
+  <h4 id="Swan_Ldap_LdapConnection_Dispose" data-uid="Swan.Ldap.LdapConnection.Dispose">Dispose()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -545,8 +545,8 @@ unbind request to the server, and then closes the socket.</p>
   </div>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapConnection_Modify_" data-uid="Unosquare.Swan.Ldap.LdapConnection.Modify*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapConnection_Modify_System_String_Unosquare_Swan_Ldap_LdapModification___System_Threading_CancellationToken_" data-uid="Unosquare.Swan.Ldap.LdapConnection.Modify(System.String,Unosquare.Swan.Ldap.LdapModification[],System.Threading.CancellationToken)">Modify(String, LdapModification[], CancellationToken)</h4>
+  <a id="Swan_Ldap_LdapConnection_Modify_" data-uid="Swan.Ldap.LdapConnection.Modify*"></a>
+  <h4 id="Swan_Ldap_LdapConnection_Modify_System_String_Swan_Ldap_LdapModification___System_Threading_CancellationToken_" data-uid="Swan.Ldap.LdapConnection.Modify(System.String,Swan.Ldap.LdapModification[],System.Threading.CancellationToken)">Modify(String, LdapModification[], CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Modifies the specified dn.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -571,7 +571,7 @@ unbind request to the server, and then closes the socket.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Unosquare.Swan.Ldap.LdapModification.html">LdapModification</a>[]</td>
+        <td><a class="xref" href="Swan.Ldap.LdapModification.html">LdapModification</a>[]</td>
         <td><span class="parametername">mods</span></td>
         <td><p>The mods.</p>
 </td>
@@ -618,8 +618,8 @@ unbind request to the server, and then closes the socket.</p>
   </table>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapConnection_Read_" data-uid="Unosquare.Swan.Ldap.LdapConnection.Read*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapConnection_Read_System_String_System_String___System_Threading_CancellationToken_" data-uid="Unosquare.Swan.Ldap.LdapConnection.Read(System.String,System.String[],System.Threading.CancellationToken)">Read(String, String[], CancellationToken)</h4>
+  <a id="Swan_Ldap_LdapConnection_Read_" data-uid="Swan.Ldap.LdapConnection.Read*"></a>
+  <h4 id="Swan_Ldap_LdapConnection_Read_System_String_System_String___System_Threading_CancellationToken_" data-uid="Swan.Ldap.LdapConnection.Read(System.String,System.String[],System.Threading.CancellationToken)">Read(String, String[], CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Synchronously reads the entry for the specified distinguished name (DN),
 using the specified constraints, and retrieves only the specified
 attributes from the entry.</p>
@@ -669,7 +669,7 @@ attributes from the entry.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Unosquare.Swan.Ldap.LdapEntry.html">LdapEntry</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Swan.Ldap.LdapEntry.html">LdapEntry</a>&gt;</td>
         <td><p>the LdapEntry read from the server.</p>
 </td>
       </tr>
@@ -685,7 +685,7 @@ attributes from the entry.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Unosquare.Swan.Ldap.LdapException.html">LdapException</a></td>
+        <td><a class="xref" href="Swan.Ldap.LdapException.html">LdapException</a></td>
         <td><p>Read response is ambiguous, multiple entries returned.</p>
 </td>
       </tr>
@@ -693,8 +693,8 @@ attributes from the entry.</p>
   </table>
   
   
-  <a id="Unosquare_Swan_Ldap_LdapConnection_Search_" data-uid="Unosquare.Swan.Ldap.LdapConnection.Search*"></a>
-  <h4 id="Unosquare_Swan_Ldap_LdapConnection_Search_System_String_Unosquare_Swan_Ldap_LdapScope_System_String_System_String___System_Boolean_System_Threading_CancellationToken_" data-uid="Unosquare.Swan.Ldap.LdapConnection.Search(System.String,Unosquare.Swan.Ldap.LdapScope,System.String,System.String[],System.Boolean,System.Threading.CancellationToken)">Search(String, LdapScope, String, String[], Boolean, CancellationToken)</h4>
+  <a id="Swan_Ldap_LdapConnection_Search_" data-uid="Swan.Ldap.LdapConnection.Search*"></a>
+  <h4 id="Swan_Ldap_LdapConnection_Search_System_String_Swan_Ldap_LdapScope_System_String_System_String___System_Boolean_System_Threading_CancellationToken_" data-uid="Swan.Ldap.LdapConnection.Search(System.String,Swan.Ldap.LdapScope,System.String,System.String[],System.Boolean,System.Threading.CancellationToken)">Search(String, LdapScope, String, String[], Boolean, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Performs the search specified by the parameters,
 also allowing specification of constraints for the search (such
 as the maximum number of entries to find or the maximum time to
@@ -722,7 +722,7 @@ wait for search results).</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Unosquare.Swan.Ldap.LdapScope.html">LdapScope</a></td>
+        <td><a class="xref" href="Swan.Ldap.LdapScope.html">LdapScope</a></td>
         <td><span class="parametername">scope</span></td>
         <td><p>The scope of the entries to search.</p>
 </td>
@@ -765,7 +765,7 @@ names and values for attributes found.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Unosquare.Swan.Ldap.LdapSearchResults.html">LdapSearchResults</a>&gt;</td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Swan.Ldap.LdapSearchResults.html">LdapSearchResults</a>&gt;</td>
         <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> representing the asynchronous operation.</p>
 </td>
       </tr>
