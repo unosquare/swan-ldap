@@ -5,14 +5,13 @@
     <Copyright>Copyright (c) 2016-2019 - Unosquare</Copyright>
     <AssemblyTitle>Unosquare SWAN Samples</AssemblyTitle>
     <TargetFrameworks>netcoreapp2.2</TargetFrameworks>
-    <AssemblyName>Unosquare.Swan.Samples</AssemblyName>
+    <AssemblyName>Swan.Ldap.Samples</AssemblyName>
     <OutputType>Exe</OutputType>
-    <PackageId>Unosquare.Swan.Samples</PackageId>
     <LangVersion>7.3</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Unosquare.Swan.Ldap\Unosquare.Swan.Ldap.csproj" />
+    <ProjectReference Include="..\Swan.Ldap\Swan.Ldap.csproj" />
   </ItemGroup>
 
 </Project>

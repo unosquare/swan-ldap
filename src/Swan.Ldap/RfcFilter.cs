@@ -1,10 +1,11 @@
-﻿namespace Unosquare.Swan.Ldap
+﻿using Unosquare.Swan;
+
+namespace Swan.Ldap
 {
     using System;
     using System.Collections;
     using System.Collections.Generic;
     using System.Text;
-    using Unosquare.Swan.Exceptions;
 
     /// <summary>
     /// Represents an Ldap Filter  by parsing an RFC 2254 Search Filter String.

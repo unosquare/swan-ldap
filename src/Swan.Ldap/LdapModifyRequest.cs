@@ -1,4 +1,4 @@
-﻿namespace Unosquare.Swan.Ldap
+﻿namespace Swan.Ldap
 {
     /// <summary>
     /// Represents a LDAP Modification Request Message.

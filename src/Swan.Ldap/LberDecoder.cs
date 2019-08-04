@@ -1,4 +1,4 @@
-﻿namespace Unosquare.Swan.Ldap
+﻿namespace Swan.Ldap
 {
     using System.IO;
 

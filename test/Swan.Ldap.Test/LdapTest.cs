@@ -1,4 +1,4 @@
-﻿namespace Unosquare.Swan.Ldap.Test
+﻿namespace Swan.Ldap.Test
 {
     using System;
     using System.Net.Sockets;

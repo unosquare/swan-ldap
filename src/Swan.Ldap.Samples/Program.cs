@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Unosquare.Swan;
 
-namespace Unosquare.Swan.Ldap.Samples
+namespace Swan.Ldap.Samples
 {
     public static class Program
     {

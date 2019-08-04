@@ -1,4 +1,4 @@
-﻿namespace Unosquare.Swan.Ldap
+﻿namespace Swan.Ldap
 {
     /// <summary>
     /// The base class for Ldap request and response messages.

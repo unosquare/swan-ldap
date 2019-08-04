@@ -5,13 +5,13 @@
     <Copyright>Copyright (c) 2016-2019 - Unosquare</Copyright>
     <AssemblyTitle>Unosquare SWAN Test</AssemblyTitle>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <AssemblyName>Unosquare.Swan.Test</AssemblyName>
+    <AssemblyName>Swan.Ldap.Test</AssemblyName>
     <CodeAnalysisRuleSet>..\..\StyleCop.Analyzers.ruleset</CodeAnalysisRuleSet>
     <LangVersion>7.3</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Unosquare.Swan.Ldap\Unosquare.Swan.Ldap.csproj" />
+    <ProjectReference Include="..\..\src\Swan.Ldap\Swan.Ldap.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -23,7 +23,7 @@ PM> Install-Package Unosquare.Swan.Ldap
 ## The `LDAPConnection` class
 The **Lightweight Directory Access Protocol** or LDAP is a network protocol for querying and modifying items in directory service providers like [Active Directory](https://en.wikipedia.org/wiki/Active_Directory) which provide a systematic set of records organized in a hierarchical structure. Active Directory stores information about users, computers, groups and other objects that are part of a `domain`.
 
-[LdapConnection API Doc](https://unosquare.github.io/swan/api/Unosquare.Swan.Networking.Ldap.LdapConnection.html)
+[LdapConnection API Doc](https://unosquare.github.io/swan-ldap/api/Swan.Networking.Ldap.LdapConnection.html)
 
 #### Operations
 LDAP has a couple of operations that can be executed

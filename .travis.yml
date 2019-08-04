@@ -15,7 +15,7 @@ install:
   - dotnet restore
 script:
   - node ./ldap.js &
-  - cd ./test/Unosquare.Swan.Ldap.Test/
-  - dotnet test Unosquare.Swan.Ldap.Test.csproj -s .runsettings -f netcoreapp2.2
+  - cd ./test/Swan.Ldap.Test/
+  - dotnet test Swan.Ldap.Test.csproj -s .runsettings -f netcoreapp2.2
 after_script:
   - killall -9 node

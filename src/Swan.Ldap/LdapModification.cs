@@ -1,4 +1,4 @@
-﻿namespace Unosquare.Swan.Ldap
+﻿namespace Swan.Ldap
 {
     /// <summary>
     /// A single add, delete, or replace operation to an LdapAttribute.

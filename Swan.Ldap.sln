@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2D969810-4C1B-4354-9D55-5961EFF55AB3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2B307C2C-8FC4-492F-80D7-D56F818C8482}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+		appveyor.yml = appveyor.yml
+		docfx.json = docfx.json
+		ldap.js = ldap.js
+		LICENSE = LICENSE
+		package.json = package.json
+		README.md = README.md
+		StyleCop.Analyzers.ruleset = StyleCop.Analyzers.ruleset
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FD98D3F3-CD24-467A-A730-CAA79F92E693}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swan.Ldap", "src\Swan.Ldap\Swan.Ldap.csproj", "{682FC2DD-CCB9-4514-AC08-3D88013D0672}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swan.Ldap.Samples", "src\Swan.Ldap.Samples\Swan.Ldap.Samples.csproj", "{02925696-8B0E-4EE7-84E9-3D674AE43113}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swan.Ldap.Test", "test\Swan.Ldap.Test\Swan.Ldap.Test.csproj", "{072FB911-FFE5-433A-8FD7-A27C50654CCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{682FC2DD-CCB9-4514-AC08-3D88013D0672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{682FC2DD-CCB9-4514-AC08-3D88013D0672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{682FC2DD-CCB9-4514-AC08-3D88013D0672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{682FC2DD-CCB9-4514-AC08-3D88013D0672}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02925696-8B0E-4EE7-84E9-3D674AE43113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02925696-8B0E-4EE7-84E9-3D674AE43113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02925696-8B0E-4EE7-84E9-3D674AE43113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02925696-8B0E-4EE7-84E9-3D674AE43113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{072FB911-FFE5-433A-8FD7-A27C50654CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072FB911-FFE5-433A-8FD7-A27C50654CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072FB911-FFE5-433A-8FD7-A27C50654CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072FB911-FFE5-433A-8FD7-A27C50654CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{682FC2DD-CCB9-4514-AC08-3D88013D0672} = {2D969810-4C1B-4354-9D55-5961EFF55AB3}
+		{02925696-8B0E-4EE7-84E9-3D674AE43113} = {2D969810-4C1B-4354-9D55-5961EFF55AB3}
+		{072FB911-FFE5-433A-8FD7-A27C50654CCD} = {FD98D3F3-CD24-467A-A730-CAA79F92E693}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5977823D-9DDF-4C6D-AA39-87491F030AC1}
+	EndGlobalSection
+EndGlobal

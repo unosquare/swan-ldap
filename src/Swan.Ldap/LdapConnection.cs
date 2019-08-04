@@ -1,4 +1,4 @@
-﻿namespace Unosquare.Swan.Ldap
+﻿namespace Swan.Ldap
 {
     using System;
     using System.Collections.Generic;
@@ -31,8 +31,8 @@
     /// <code>
     /// class Example
     /// {
-    ///     using Unosquare.Swan;
-    ///     using Unosquare.Swan.Networking.Ldap;
+    ///     using Swan;
+    ///     using Swan.Networking.Ldap;
     ///     using System.Threading.Tasks;
     ///     
     ///     static async Task Main()

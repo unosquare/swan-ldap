@@ -1,4 +1,6 @@
-﻿namespace Unosquare.Swan.Ldap
+﻿using Unosquare.Swan;
+
+namespace Swan.Ldap
 {
     using System;
 
