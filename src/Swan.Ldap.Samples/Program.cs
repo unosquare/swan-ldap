@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Unosquare.Swan;
+using Swan.Logging;
 
 namespace Swan.Ldap.Samples
 {
@@ -10,12 +10,11 @@ namespace Swan.Ldap.Samples
         /// Mains the specified arguments.
         /// </summary>
         /// <param name="args">The arguments.</param>
-        /// <exception cref="SampleException"></exception>
         public static async Task Main(string[] args)
         {
             await TestLdapSearch();
             Terminal.Flush();
-            "Enter any key to exit . . .".ReadKey();
+            Terminal.ReadKey("Enter any key to exit . . .");
         }
 
         private static async Task TestLdapSearch()

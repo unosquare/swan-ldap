@@ -1,4 +1,6 @@
-﻿namespace Swan.Ldap
+﻿using Swan.Net;
+
+namespace Swan.Ldap
 {
     using System;
     using System.Collections.Generic;
@@ -8,8 +10,6 @@
     using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
-    using Unosquare.Swan.Exceptions;
-    using Unosquare.Swan.Networking;
 
     /// <summary>
     /// The central class that encapsulates the connection

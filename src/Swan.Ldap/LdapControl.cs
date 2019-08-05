@@ -1,6 +1,4 @@
-﻿using Unosquare.Swan;
-
-namespace Swan.Ldap
+﻿namespace Swan.Ldap
 {
     using System;
     using System.Collections.Generic;
