@@ -32,7 +32,7 @@ namespace Swan.Ldap
     /// class Example
     /// {
     ///     using Swan;
-    ///     using Swan.Networking.Ldap;
+    ///     using Swan.Ldap;
     ///     using System.Threading.Tasks;
     ///     
     ///     static async Task Main()
