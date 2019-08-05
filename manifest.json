@@ -110,7 +110,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Swan.Ldap.LdapConnection.html",
-          "hash": "QoFhYKr0slJlBecWPSx8qg=="
+          "hash": "z84eRo0wD6rZOK5mVdze2g=="
         }
       },
       "is_incremental": false,
@@ -295,16 +295,16 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 1,
-          "skipped_file_count": 0
-        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 15,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
