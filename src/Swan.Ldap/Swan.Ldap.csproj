@@ -25,7 +25,7 @@
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Unosquare.Swan" Version="2.0.0-preview005" />
+    <PackageReference Include="Unosquare.Swan" Version="2.0.0" />
   </ItemGroup>
 
 </Project>
