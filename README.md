@@ -5,6 +5,7 @@
 
 **SWAN LDAP Client** was previously included as part of the main SWAN project, but since there is not too much products using an LDAP Client we removed as standalone library.
 
+**NOTE** This repository is archived. Please use [Novell Directory LDAP](https://github.com/dsbenghe/Novell.Directory.Ldap.NETStandard) instead.
 
 *:star: Please star this project if you find it useful!*
 
